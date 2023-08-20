@@ -1,0 +1,25 @@
+{{!-- Boton Para Añadir animes --}}
+<section class="d-flex mt-5">
+    
+    <div class="d-flex ">
+        <form id="buscador" class="d-flex" action="/" method="GET">
+            <label for="buscar" class="form-label my-4"></label>
+            <input type="text" class="form-control my-4 mx-2 " name="busqueda" placeholder="Ingrese Nombre o ID" id="buscar">
+            <button  type="submit" class="btn btn-secondary my-4" id="btnBuscar"><i class="bi bi-search"></i> Buscar</button>
+        </form>
+    </div>
+    <div class="ms-auto">
+        <button class="btn btn-dark my-4 agregar" data-bs-toggle="modal" data-bs-target="#crearAnimeModal"><i class="bi bi-file-earmark-plus"></i> Agregar Anime</button>
+    </div>
+</section>
+
+{{!-- Tabla Con Animes --}}
+{{#if animes}}
+{{>tabla
+    animes = animes}}
+{{else}}
+<h3>No hay Animes para mostrar</h3>
+{{/if}}
+
+{{!-- Modales --}}
+{{>modal}}

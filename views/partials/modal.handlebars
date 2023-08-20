@@ -1,0 +1,96 @@
+{{!-- Modal Con Ver Más --}}
+
+<div class="modal fade"  id="verMas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="titulo"> </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6" >
+            <img id="imagen" alt="Portada del Anime" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <section>
+              <p id="genero"></p>
+              <p id="year"></p>
+              <p id="autor"></p>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{!-- Modal Para Agregar Animes --}}
+
+<div class="modal fade" id="crearAnimeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="tituloCrear">Agrega Un Nuevo Anime</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="crearAnime">
+            <label for="crearNombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="nombre" id="crearNombre" required>
+            <label for="crearGenero" class="form-label pt-2">Género</label>
+            <input type="text"  class="form-control" name="genero" id="crearGenero" required>
+            <label for="crearYear" class="form-label pt-2">Año</label>
+            <input type="text"  class="form-control" name="year" id="crearYear" required>
+            <label for="crearAutor" class="form-label pt-2">Autor</label>
+            <input type="text"  class="form-control" name="autor" id="crearAutor" required>
+            <label for="crearImagen" class="form-label pt-2">Imágen URL</label>
+            <input type="text" class="form-control " name="imagen" id="crearImagen" required>
+            <input type="submit" class="btn btn-primary mt-3" value="Agregar Anime">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{{!-- Modal Para Editar Animes --}}
+
+<div class="modal fade" id="editAnimeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="tituloCrear">Editar Anime</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="editAnime">
+            <label for="editId" class="form-label d-none">ID</label>
+            <input type="text" class="form-control d-none" name="id" id="editId" required>
+            <label for="editNombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="nombre" id="editNombre" required>
+            <label for="editGenero" class="form-label pt-2">Género</label>
+            <input type="text"  class="form-control" name="genero" id="editGenero" required>
+            <label for="editYear" class="form-label pt-2">Año</label>
+            <input type="text"  class="form-control" name="year" id="editYear" required>
+            <label for="editAutor" class="form-label pt-2">Autor</label>
+            <input type="text"  class="form-control" name="autor" id="editAutor" required>
+            <label for="editImagen" class="form-label pt-2">Imágen URL</label>
+            <input type="text" class="form-control " name="imagen" id="editImagen" required>
+            <input type="submit" class="btn btn-primary mt-3" value="Editar Anime">
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

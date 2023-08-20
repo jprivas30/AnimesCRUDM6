@@ -1,0 +1,25 @@
+
+{{!-- Tabla Con Animes --}}
+<table class="table table-dark animate__animated animate__fadeIn">
+  <thead>
+    <tr class="text-center">
+      <th scope="col">Id</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Ver Más</th>
+      <th scope="col">Modificar</th>
+      <th scope="col">Eliminar</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each animes}}
+    <tr class="table-active">
+      <th scope="row">{{this.id}}</th>
+      <td>{{this.nombre}}</td>
+      <td class="text-center"><button class="btn btn-outline-secondary mostrar " data-id="{{this.id}}"  data-bs-toggle="modal" data-bs-target="#verMas" ><i class="bi bi-plus" ></i> Ver Más</button></td>
+      <td class="text-center"><button class="btn btn-outline-warning editar" data-bs-toggle="modal" data-bs-target="#editAnimeModal" data-id="{{this.id}}"><i class="bi bi-pencil-square"></i> Editar</button></td>
+      <td class="text-center"><button class="btn btn-outline-danger eliminar animate__animated" data-id="{{this.id}}" data-name="{{this.nombre}}" ><i class="bi bi-trash-fill"></i> Eliminar</button></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+

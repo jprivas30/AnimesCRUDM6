@@ -1,0 +1,25 @@
+body{
+    background-image: url(https://wallpaperset.com/w/full/0/1/3/531512.jpg);
+}
+
+#btnBuscar {
+    width: 177px;
+    height: 36px
+}
+
+#buscar {
+    width: 177px;
+    height: 36px
+}
+
+#menuNAv {
+    height: 70px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.nav-item a{
+    color: #f0ebeb !important;
+}
